@@ -81,7 +81,7 @@ The primary goal is to provide insights to the HR team regarding data scientists
 
 ## Project Plan and Timeline
 
-- [Gantt Chart]([https://www.kaggle.com/datasets/arashnic/hr-analytics-job-change-of-data-scientists](https://github.com/IT21313370/FDM_Mini_Project_Y3S1/blob/main/Gantt%20Chart.png)https://github.com/IT21313370/FDM_Mini_Project_Y3S1/blob/main/Gantt%20Chart.png)
+- [Gantt Chart](https://github.com/IT21313370/FDM_Mini_Project_Y3S1/blob/main/Gantt%20Chart.png)
 
 ## Project Team, Roles, and Responsibilities
 
@@ -120,5 +120,5 @@ The primary goal is to provide insights to the HR team regarding data scientists
 ## Links
 
 - [Dataset](https://www.kaggle.com/datasets/arashnic/hr-analytics-job-change-of-data-scientists)
-- [Gantt Chart]([https://www.kaggle.com/datasets/arashnic/hr-analytics-job-change-of-data-scientists](https://github.com/IT21313370/FDM_Mini_Project_Y3S1/blob/main/Gantt%20Chart.png)https://github.com/IT21313370/FDM_Mini_Project_Y3S1/blob/main/Gantt%20Chart.png)
+- [Gantt Chart](https://github.com/IT21313370/FDM_Mini_Project_Y3S1/blob/main/Gantt%20Chart.png)
   
