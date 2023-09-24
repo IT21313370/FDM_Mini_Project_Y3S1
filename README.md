@@ -96,21 +96,21 @@ The primary goal is to provide insights to the HR team regarding data scientists
 |                  |                      |                   | - Test alternate model             |
 |                  |                      |                   | - Data analysis and process        |
 |                  |                      |                   | - UI development                   |
-| 2                | Sulakkana H.D.S.R    | Solution Developer | - Business Analyst                 |
+| IT21224348                | Sulakkana H.D.S.R    | Solution Developer | - Business Analyst                 |
 |                  |                      |                   | - Solution Tester                  |
 |                  |                      |                   | - Implement model                  |
 |                  |                      |                   | - Handle documentation             |
 |                  |                      |                   | - Test alternate model             |
 |                  |                      |                   | - Data analysis and process        |
 |                  |                      |                   | - UI development                   |
-| 3                | Kuhananth C          | Solution Developer | - Business Analyst                 |
+| IT21302244                | Kuhananth C          | Solution Developer | - Business Analyst                 |
 |                  |                      |                   | - Solution Tester                  |
 |                  |                      |                   | - Implement model                  |
 |                  |                      |                   | - Handle documentation             |
 |                  |                      |                   | - Test alternate model             |
 |                  |                      |                   | - Data analysis and process        |
 |                  |                      |                   | - UI development                   |
-| 4                | Manathunga M.A.O.S    | Solution Developer | - Business Analyst                 |
+| IT21224652                | Manathunga M.A.O.S    | Solution Developer | - Business Analyst                 |
 |                  |                      |                   | - Solution Tester                  |
 |                  |                      |                   | - Implement model                  |
 |                  |                      |                   | - Handle documentation             |
