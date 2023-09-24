@@ -81,7 +81,7 @@ The primary goal is to provide insights to the HR team regarding data scientists
 
 ## Project Plan and Timeline
 
-![Gantt Chart](./Gantt Chart.png)
+![Gantt Chart]([./Gantt Chart.png](https://github.com/IT21313370/FDM_Mini_Project_Y3S1/blob/main/Gantt%20Chart.png))
 
 ## Project Team, Roles, and Responsibilities
 
