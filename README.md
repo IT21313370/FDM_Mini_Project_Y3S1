@@ -1,6 +1,4 @@
-# FDM_Mini_Project_Y3S1
-
-# HR Analytics Project
+# FDM_Mini_Project_Y3S1 - HR Analytics
 
 ## Background
 
@@ -83,7 +81,7 @@ The primary goal is to provide insights to the HR team regarding data scientists
 
 ## Project Plan and Timeline
 
-[View Gantt Chart](#link-to-gantt-chart)
+![Gantt Chart](./Gantt Chart)
 
 ## Project Team, Roles, and Responsibilities
 
@@ -121,6 +119,5 @@ The primary goal is to provide insights to the HR team regarding data scientists
 
 ## Links
 
-- [Dataset]-https://www.kaggle.com/datasets/arashnic/hr-analytics-job-change-of-data-scientists
-- [Gantt Chart](#link-to-gantt-chart)
+- [Dataset](https://www.kaggle.com/datasets/arashnic/hr-analytics-job-change-of-data-scientists)
   
