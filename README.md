@@ -88,7 +88,7 @@ The primary goal is to provide insights to the HR team regarding data scientists
 
 | Member IT Number | Member Name          | Member Role       | Member Responsibility               |
 |------------------|----------------------|-------------------|------------------------------------|
-| 1                | Dissanayake D.J.R    | Team Leader       | - Solution Developer               |
+| IT21313370               | Dissanayake D.J.R    | Team Leader       | - Solution Developer               |
 |                  |                      |                   | - Business Analyst                 |
 |                  |                      |                   | - Solution Tester                  |
 |                  |                      |                   | - Implement model                  |
