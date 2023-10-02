@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 import LightModeOutlinedIcon from '@mui/icons-material/LightModeOutlined';
 import DarkModeOutlinedIcon from '@mui/icons-material/DarkModeOutlined';
 import Groups2Icon from '@mui/icons-material/Groups2';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import WorkIcon from '@mui/icons-material/Work';
 import HailIcon from '@mui/icons-material/Hail';
 import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
 
@@ -100,7 +99,7 @@ function Indicators({count}) {
 }
 
 function Forms({updateCount}) {
-   const [count, setCount] = useState(0);
+//    const [count, setCount] = useState(0);
     // Initialize state for form fields
   const [formData, setFormData] = useState({
     city_development_index: '',
