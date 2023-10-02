@@ -1,38 +1,270 @@
-.App {
+.Area {
+  margin: 0px auto;
+  padding-top: 1.5%;
+  background: transparent;
   text-align: center;
+  width: 100%;
+  height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  /* font-size: 100px; */
+  /* border: 1px solid red; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.NavBar {
+  width: 100%;
+  height: 2vh;
+  padding: 1% 0;
   display: flex;
-  flex-direction: column;
+  background: #ffffff;
+  /* position: fixed; */
+  top: 0;
+  z-index: 1000;
+  justify-content: space-between; /* Add this line to push items to the sides */
+  /* border: 1px solid orangered; */
+}
+
+.navbar_1 {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-left: 1%;
+  /* border: 1px solid black; */
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-2 {
+  display: flex;
+  align-items: center;
+  padding-right: 1%; /* Adjust padding-right to control the spacing on the right */
+  /* border: 1px solid black; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.app-name {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+}
+
+li:hover {
+  color: #16FF00;
+}
+
+/* Loading Screen */
+/* loader.css */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  z-index: 9999;
+}
+
+.loader h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+
+.light-mode {
+  background-color: #EEEEEE;
+  color: #393E46;
+}
+
+.dark-mode {
+  background-color: #222831; /* Dark blue background color */
+  color: #D65A31; /* White font color */
+}
+
+.sub_area_01 {
+margin-top: 0%;
+}
+
+.indicator_cards {
+margin: 0 0; 
+box-sizing: border-box; 
+display: inline-block;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: space-between; 
+}
+
+.card {
+  /* border: 1px solid white; */
+  flex: 1; 
+  margin: 0 1%; 
+  padding: 1%;
+  box-sizing: border-box; 
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+#card_01 {
+  background-color: #279EFF;
+  color: #EEEEEE;
+  border-radius: 10px;
+  text-align: left;
+}
+
+#card_02 {
+  background-color: #504099;
+  color: #EEEEEE;
+  border-radius: 10px;
+  text-align: left;
+}
+#card_03 {
+  background-color: #D65A31;
+  color: #EEEEEE;
+  border-radius: 10px;
+  text-align: left;
+}
+#card_04 {
+  background-color: #C07F00;
+  color: #EEEEEE;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.card_name {
+  text-align: left;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card_count {
+  text-align: left;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.card_icon {
+  font-size: 24px;
+}
+
+/* sub are 02 */
+
+.sub_area_02 {
+  width: 100%;
+  height: 73%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_body {
+  flex: 1;
+  background-color: #393e4685;
+  margin: 1%;
+  border-radius: 10px;
+  text-align: left;
+  padding: 0.8%;
+}
+
+.result_body {
+  flex: 1;
+  background-color: #393e4685;
+  margin: 1%;
+  border-radius: 10px;
+  margin-bottom: 1%;
+}
+
+.form_name {
+  background-color: #5b626e;
+  color: #EEEEEE;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 0.8%;
+}
+
+.result_body {
+  flex: 1;
+  background-color: #393e4685;
+  margin: 1%;
+  border-radius: 10px;
+  text-align: left;
+  padding: 0.8%;
+}
+
+form {
+  background-color: #5b626e;
+  padding: 1.5%;
+  margin-top: 2%;
+  border-radius: 10px;
+  height: 89%;
+  color: #EEEEEE;
+  font-weight: 500;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input {
+  width: 500px;
+  padding: 0.8%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+select {
+  width: 510px;
+  padding: 0.8%;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+.button-container {
+  text-align: right;
+  margin-top: 0px;
+  
+}
+
+
+button {
+  width: 25%;
+  padding: 2%;
+  border-radius: 5px;
+  color:#EEEEEE;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #ED2B2A;
+  text-align: center;
+  border: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button:hover {
+  background-color: #16FF00;
+  cursor: pointer;
+  color: #333;
+}
+
+.footer {
+  color:#5b626e;
+  font-size: 12px;
+  margin: 20px auto;
 }
