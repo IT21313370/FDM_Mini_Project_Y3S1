@@ -31,7 +31,7 @@ function App() {
     <div className={`App ${isLightMode ? 'light-mode' : 'dark-mode'}`}>
       {loading ? (
         <div className="loader">
-          <ScaleLoader color={'#4C74E0'} loading={loading} css={override} size={150} />
+          <ScaleLoader color={'#D65A31'} loading={loading} css={override} size={150} />
         </div>
       ) : (
         <Main isLightMode={isLightMode} toggleMode={toggleMode} />
