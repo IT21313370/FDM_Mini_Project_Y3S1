@@ -31,6 +31,11 @@
     padding-left: 1%;
     /* border: 1px solid black; */
   }
+
+  .navbar_1 img {
+    width: 9%;
+    margin-right: 3%;
+  }
   
   .navbar-2 {
     display: flex;

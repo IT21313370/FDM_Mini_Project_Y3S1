@@ -6,6 +6,9 @@ import Groups2Icon from '@mui/icons-material/Groups2';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import HailIcon from '@mui/icons-material/Hail';
 import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
+import businessLogo from './assets/businessLogo.png';
+
+
 
 
 export default function Main({ isLightMode, toggleMode }) {
@@ -30,6 +33,7 @@ function NavBar({ isLightMode, toggleMode }) {
   return (
     <div className={`NavBar ${isLightMode ? 'light-mode' : 'dark-mode'}`} id='NavBar'>
       <div className='navbar_1'>
+        <img src={businessLogo} alt='logo' />
         <span className='app-name'>HR Analytics Dashboard</span>
       </div>
       <div className='navbar-2'>
