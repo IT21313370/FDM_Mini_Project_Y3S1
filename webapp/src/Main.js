@@ -137,7 +137,7 @@ function Forms({updateCount}) {
             <div className='form_body'>
                 <span className='form_name'>Data Submission Form</span>
                 <form onSubmit={handleSubmit}>
-        <label htmlFor="city_development_index">City Development Index (float)</label><br />
+        <label htmlFor="city_development_index">City Development Index</label><br />
         <input
           type="number"
           step="0.01"
@@ -199,20 +199,20 @@ function Forms({updateCount}) {
                 <span className='form_name'>Predicted Results</span>
                 <div className='box_body'>
                   <div className='result_box'>
-                    <span className='box_name'>Accuracy</span><br />
-                    <span className='box_result'>0%</span>
-                  </div>
-                  <div className='result_box'>
                     <span className='box_name'>Precision</span><br />
-                    <span className='box_result'>0%</span>
+                    <span className='box_result' style={{ color: '#EEEEEE' }}>0%</span>
                   </div>
                   <div className='result_box'>
                     <span className='box_name'>Recall</span><br />
-                    <span className='box_result'>0%</span>
+                    <span className='box_result' style={{ color: '#EEEEEE' }}>0%</span>
+                  </div>
+                  <div className='result_box'>
+                    <span className='box_name'>Result</span><br />
+                    <span className='box_result' id='result_status_box' style={{ color: '#EEEEEE' }}>0</span>
                   </div>
                   <div className='result_box'>
                     <span className='box_name'>Status</span><br/>
-                    <span className='box_result'>Stay</span>
+                    <span className='box_result' style={{ color: '#16FF00' }}>Stay</span>
                   </div>
                 </div>
             </div>
