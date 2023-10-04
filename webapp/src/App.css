@@ -211,7 +211,8 @@
   }
 
   form {
-    background-color: #5b626e;
+    /* background-color: #5b626e; */
+    border: 1px solid #EEEEEE;
     padding: 1.5%;
     margin-top: 1.5%;
     border-radius: 10px;
@@ -227,6 +228,7 @@
     border-radius: 5px;
     outline: none;
     border: none;
+    margin: 0 auto;
   }
 
   select {
@@ -235,6 +237,7 @@
     border-radius: 5px;
     outline: none;
     border: none;
+    margin: 0 auto;
   }
 
   .button-container {
