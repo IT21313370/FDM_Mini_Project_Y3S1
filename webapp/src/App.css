@@ -1,6 +1,6 @@
 .Area {
     margin: 0px auto;
-    padding-top: 1.5%;
+    padding-top: 0.3%;
     background: transparent;
     text-align: center;
     width: 100%;
@@ -8,8 +8,6 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     overflow-y: hidden;
     overflow-x: hidden;
-    /* font-size: 100px; */
-    /* border: 1px solid red; */
   }
   
   .NavBar {
@@ -18,18 +16,15 @@
     padding: 1% 0;
     display: flex;
     background: #ffffff;
-    /* position: fixed; */
     top: 0;
     z-index: 1000;
-    justify-content: space-between; /* Add this line to push items to the sides */
-    /* border: 1px solid orangered; */
+    justify-content: space-between;
   }
   
   .navbar_1 {
     display: flex;
     align-items: center;
     padding-left: 1%;
-    /* border: 1px solid black; */
   }
 
   .navbar_1 img {
@@ -41,7 +36,7 @@
     display: flex;
     align-items: center;
     padding-right: 1%; /* Adjust padding-right to control the spacing on the right */
-    /* border: 1px solid black; */
+
   }
   
   
@@ -79,11 +74,10 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    /* background-color: rgba(255, 255, 255, 0.8); */
     background-color:#222831;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
     z-index: 9999;
   }
   
@@ -99,8 +93,8 @@
   }
   
   .dark-mode {
-    background-color: #222831; /* Dark blue background color */
-    color: #D65A31; /* White font color */
+    background-color: #222831;
+    color: #D65A31;
   }
 
   .sub_area_01 {
@@ -118,7 +112,6 @@
 }
 
 .card {
-    /* border: 1px solid white; */
     flex: 1; 
     margin: 0 1%; 
     padding: 1%;
@@ -254,6 +247,7 @@
   button {
     width: 25%;
     padding: 2%;
+    margin-top: 1%;
     border-radius: 5px;
     color:#EEEEEE;
     font-weight: 600;
@@ -273,5 +267,238 @@
   .footer {
     color:#5b626e;
     font-size: 12px;
-    margin: 20px auto;
+  }
+
+
+  /*make the css responsive*/
+  @media (max-width: 768px) {
+    /* Common Styles */
+.Area {
+  margin: 0 auto;
+  padding-top: 0.5rem; /* Changed to relative unit */
+  background: transparent;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow: hidden; /* Removed separate overflow properties */
+}
+
+.NavBar {
+  width: 100%;
+  padding: 1% 0;
+  display: flex;
+  background: #ffffff;
+  top: 0;
+  z-index: 1000;
+  justify-content: space-between;
+}
+
+/* Navbar Styles */
+.navbar_1 {
+  display: flex;
+  align-items: center;
+  padding-left: 1%;
+}
+
+.navbar_1 img {
+  width: 10%; /* Adjusted image size */
+  margin-right: 3%;
+}
+
+.navbar-2 {
+  display: flex;
+  align-items: center;
+  padding-right: 1%;
+}
+
+.app-name {
+  font-size: 1rem; /* Changed font size to relative unit */
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-right: 1rem; /* Adjusted margin for smaller screens */
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-size: 1rem; /* Changed font size to relative unit */
+}
+
+/* Loading Screen */
+/* loader.css */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #222831;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader h2 {
+  font-size: 1.5rem; /* Changed font size to relative unit */
+  color: #333;
+}
+
+/* Color Modes */
+.light-mode {
+  background-color: #EEEEEE;
+  color: #393E46;
+}
+
+.dark-mode {
+  background-color: #222831;
+  color: #D65A31;
+}
+
+/* Card Styles */
+.sub_area_01 {
+  margin-top: 0;
+}
+
+.indicator_cards {
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap; /* Added flex-wrap to handle smaller screens */
+  justify-content: space-between;
+}
+
+.card {
+  flex: 1;
+  margin: 1%; /* Adjusted margin for smaller screens */
+  padding: 1%;
+  box-sizing: border-box;
+  width: 100%; /* Adjusted width for smaller screens */
+}
+
+/* Card Colors */
+#card_01 {
+  background-color: #279EFF;
+  color: #EEEEEE;
+  border-radius: 10px;
+  text-align: left;
+}
+
+#card_02 {
+  background-color: #504099;
+  color: #EEEEEE;
+  border-radius: 10px;
+  text-align: left;
+}
+
+#card_03 {
+  background-color: #D65A31;
+  color: #EEEEEE;
+  border-radius: 10px;
+  text-align: left;
+}
+
+#card_04 {
+  background-color: #C07F00;
+  color: #EEEEEE;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.card_name {
+  text-align: left;
+  font-size: 1rem; /* Changed font size to relative unit */
+  font-weight: 600;
+}
+
+.card_count {
+  text-align: left;
+  font-size: 1.5rem; /* Changed font size to relative unit */
+  font-weight: 600;
+}
+
+.card_icon {
+  font-size: 1.2rem; /* Changed font size to relative unit */
+}
+
+/* Sub Area 02 Styles */
+.sub_area_02 {
+  width: 100%;
+  height: 73%;
+  display: flex;
+  flex-wrap: wrap; /* Added flex-wrap to handle smaller screens */
+  justify-content: space-between;
+}
+
+.form_body,
+.result_body {
+  flex: 1;
+  margin: 1%; /* Adjusted margin for smaller screens */
+  padding: 1%; /* Adjusted padding for smaller screens */
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: left;
+}
+
+/* Form and Input Styles */
+form {
+  padding: 4%;
+  margin-top: 2%;
+  border-radius: 10px;
+  color: #EEEEEE;
+  font-weight: 500;
+}
+
+input {
+  width: 95%; /* Adjusted width for smaller screens */
+  padding: 0.5rem; /* Changed padding to relative unit */
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+select{
+  width: 99%; /* Adjusted width for smaller screens */
+  padding: 0.5rem; /* Changed padding to relative unit */
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+/* Button Styles */
+.button-container {
+  text-align: right;
+  margin-top: 0;
+}
+
+button {
+  width: 35%;
+  padding: 2%;
+  border-radius: 5px;
+  font-size: 1rem; /* Changed font size to relative unit */
+  background-color: #ED2B2A;
+  text-align: center;
+  border: none;
+  font-weight: 600;
+  margin-top: 2%;
+}
+
+button:hover {
+  background-color: #16FF00;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Footer Styles */
+.footer {
+  font-size: 0.75rem; /* Changed font size to relative unit */
+  color: #5b626e;
+  margin-top: 1%;
+}
+
   }
