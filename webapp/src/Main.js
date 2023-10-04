@@ -197,6 +197,24 @@ function Forms({updateCount}) {
             </div>
             <div className='result_body'>
                 <span className='form_name'>Predicted Results</span>
+                <div className='box_body'>
+                  <div className='result_box'>
+                    <span className='box_name'>Accuracy</span><br />
+                    <span className='box_result'>0%</span>
+                  </div>
+                  <div className='result_box'>
+                    <span className='box_name'>Precision</span><br />
+                    <span className='box_result'>0%</span>
+                  </div>
+                  <div className='result_box'>
+                    <span className='box_name'>Recall</span><br />
+                    <span className='box_result'>0%</span>
+                  </div>
+                  <div className='result_box'>
+                    <span className='box_name'>Status</span><br/>
+                    <span className='box_result'>Stay</span>
+                  </div>
+                </div>
             </div>
         </div>
     )
