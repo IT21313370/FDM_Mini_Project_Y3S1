@@ -6,8 +6,8 @@ import Groups2Icon from '@mui/icons-material/Groups2';
 import TrendingUpIcon from '@mui/icons-material/TrendingUp';
 import HailIcon from '@mui/icons-material/Hail';
 import DirectionsWalkIcon from '@mui/icons-material/DirectionsWalk';
-import businessLogo from './assets/businessLogo.png';
-
+import businessLogo2 from './assets/businessLogo2.png';
+import businessLogo1 from './assets/businesssLogo1.png';
 
 
 
@@ -31,24 +31,28 @@ export default function Main({ isLightMode, toggleMode }) {
 function NavBar({ isLightMode, toggleMode }) {
  
   return (
-    <div className={`NavBar ${isLightMode ? 'light-mode' : 'dark-mode'}`} id='NavBar'>
-      <div className='navbar_1'>
-        <img src={businessLogo} alt='logo' />
-        <span className='app-name'>HR Analytics Dashboard</span>
-      </div>
-      <div className='navbar-2'>
-        <ul>
-          <li>
-            {isLightMode ? (
-              <DarkModeOutlinedIcon onClick={toggleMode} />
-            ) : (
-              
-              <LightModeOutlinedIcon  onClick={toggleMode} />
-            )}
-          </li>
-        </ul>
-      </div>
-    </div>
+<div className={`NavBar ${isLightMode ? 'light-mode' : 'dark-mode'}`} id='NavBar'>
+  <div className='navbar_1'>
+    {isLightMode ? (
+      <img src={businessLogo2} alt='logo' /> // Light mode logo
+    ) : (
+      <img src={businessLogo1} alt='logo' /> // Dark mode logo
+    )}
+    <span className='app-name'>HR Analytics Dashboard</span>
+  </div>
+  <div className='navbar-2'>
+    <ul>
+      <li>
+        {isLightMode ? (
+          <DarkModeOutlinedIcon onClick={toggleMode} />
+        ) : (
+          <LightModeOutlinedIcon  onClick={toggleMode} />
+        )}
+      </li>
+    </ul>
+  </div>
+</div>
+
   );
 }
 
@@ -135,19 +139,20 @@ function Forms({updateCount}) {
     return (
         <div className='sub_area_02'>
             <div className='form_body'>
-                <span className='form_name'>Data Submission Form</span>
+                {/* <span className='form_name'>Data Submission Form</span> */}
                 <form onSubmit={handleSubmit}>
-        <label htmlFor="city_development_index">City Development Index</label><br />
+        <label htmlFor="city_development_index">City Development Index</label>
         <input
           type="number"
           step="0.01"
           name="city_development_index"
           value={formData.city_development_index}
           onChange={handleInputChange}
+          placeholder='ex: 1.42'
           required
         /><br /><br />
 
-        <label htmlFor="relevent_experience">Relevant Experience (Yes/No)</label><br />
+        <label htmlFor="relevent_experience">Relevant Experience <span className='label_desc'>(Yes/No)</span></label>
         <select
           name="relevent_experience"
           value={formData.relevent_experience}
@@ -158,7 +163,7 @@ function Forms({updateCount}) {
           <option value="No">No</option>
         </select><br /><br />
 
-        <label htmlFor="education_level">Education Level</label><br />
+        <label htmlFor="education_level">Education Level</label>
         <select
           name="education_level"
           value={formData.education_level}
@@ -172,43 +177,36 @@ function Forms({updateCount}) {
           <option value="primary_school">Primary School</option>
         </select><br /><br />
 
-        <label htmlFor="total_experience">Total Experience (Years)</label><br />
+        <label htmlFor="total_experience">Total Experience <span className='label_desc'>(Years)</span></label>
         <input
           type="number"
           name="total_experience"
           value={formData.total_experience}
           onChange={handleInputChange}
+          placeholder='ex: 2'
           required
         /><br /><br />
 
-        <label htmlFor="last_new_job_gap">Last New Job Gap (Years)</label><br />
+        <label htmlFor="last_new_job_gap">Last New Job Gap <span className='label_desc'>(Years)</span></label>
         <input
           type="number"
-          step="0.01"
           name="last_new_job_gap"
           value={formData.last_new_job_gap}
           onChange={handleInputChange}
+          placeholder='ex: 3'
           required
         /><br /><br />
         <div className='button-container'>
-            <button type="submit">Predict Status</button>
+            <button type="submit">Predict</button>
         </div>
       </form>
             </div>
             <div className='result_body'>
-                <span className='form_name'>Predicted Results</span>
+                {/* <span className='form_name'>Predicted Results</span> */}
                 <div className='box_body'>
-                  <div className='result_box'>
-                    <span className='box_name'>Precision</span><br />
-                    <span className='box_result' style={{ color: '#EEEEEE' }}>0%</span>
-                  </div>
-                  <div className='result_box'>
-                    <span className='box_name'>Recall</span><br />
-                    <span className='box_result' style={{ color: '#EEEEEE' }}>0%</span>
-                  </div>
-                  <div className='result_box'>
+                <div className='result_box'>
                     <span className='box_name'>Result</span><br />
-                    <span className='box_result' id='result_status_box' style={{ color: '#EEEEEE' }}>0</span>
+                    <span className='box_result' id='result_status_box' >0</span>
                   </div>
                   <div className='result_box'>
                     <span className='box_name'>Status</span><br/>
