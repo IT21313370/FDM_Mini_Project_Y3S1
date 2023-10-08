@@ -159,8 +159,10 @@ function Forms({ updateCount, submitted, setSubmitted,   setOnesCount, setZerosC
     const predictionValue = data.prediction >= 0.5 ? 1 : 0;
     if (predictionValue === 0) {
       setZerosCount((prevCount) => prevCount + 1); // Increase Stay Count
+      setZerosCount((prevCount) => prevCount);
     } else {
       setOnesCount((prevCount) => prevCount + 1); // Increase Leave Count
+      setOnesCount((prevCount) => prevCount);
     }
     fetchData()
   };
