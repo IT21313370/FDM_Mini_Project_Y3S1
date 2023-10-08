@@ -96,7 +96,7 @@
   }
   
   .dark-mode {
-    background-color: #222831;
+    background-color: #171717;
     color: #B4B4B3;
   }
 
@@ -349,9 +349,7 @@
   font-weight: 600;
 }
 
-.light-mode .box_result {
-  /* color: #edeff1; */
-}
+
 
   /*make the css responsive*/
   @media (max-width: 768px) {
