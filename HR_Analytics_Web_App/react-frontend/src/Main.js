@@ -32,7 +32,7 @@ export default function Main({ isLightMode, toggleMode }) {
         setOnesCount={setOnesCount} // Pass setOnesCount
         setZerosCount={setZerosCount} // Pass setZerosCount
       />
-      <Indicators count={count} onesCount={onesCount} zerosCount={zerosCount} />
+      {/* <Indicators count={count} onesCount={onesCount} zerosCount={zerosCount} /> */}
     </div>
   );
 }
