@@ -156,14 +156,14 @@ function Forms({ updateCount, submitted, setSubmitted,   setOnesCount, setZerosC
     });
     setSubmitted(true);
     updateCount((prevCount) => prevCount + 1);
-    const predictionValue = data.prediction >= 0.5 ? 1 : 0;
-    if (predictionValue === 0) {
-      setZerosCount((prevCount) => prevCount + 1); // Increase Stay Count
-      // setZerosCount((prevCount) => prevCount);
-    } else {
-      setOnesCount((prevCount) => prevCount + 1); // Increase Leave Count
-      // setOnesCount((prevCount) => prevCount);
-    }
+    // const predictionValue = data.prediction >= 0.5 ? 1 : 0;
+    // if (predictionValue === 0) {
+    //   setZerosCount((prevCount) => prevCount + 1); // Increase Stay Count
+    //   // setZerosCount((prevCount) => prevCount);
+    // } else {
+    //   setOnesCount((prevCount) => prevCount + 1); // Increase Leave Count
+    //   // setOnesCount((prevCount) => prevCount);
+    // }
     fetchData()
   };
 
@@ -193,6 +193,13 @@ function Forms({ updateCount, submitted, setSubmitted,   setOnesCount, setZerosC
       if (response.ok) {
         const jsonData = await response.json();
         setData(jsonData);
+
+        // Update onesCount and zerosCount based on the prediction
+        if (jsonData.prediction >= 0.5) {
+          setOnesCount((prevCount) => prevCount + 1); // Increase Leave Count
+        } else {
+          setZerosCount((prevCount) => prevCount + 1); // Increase Stay Count
+        }
       } else {
         console.error('Failed to fetch data');
       }
