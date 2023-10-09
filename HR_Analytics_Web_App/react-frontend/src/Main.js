@@ -104,7 +104,7 @@ function Indicators({ count, onesCount, zerosCount }) {
           <span className='card_name'>Model Accuracy</span>
           <div className='card-desc'>
             <div className='card_icon'><TrendingUpIcon /></div>
-            <span className='card_count'>70.6%</span>
+            <span className='card_count'>76%</span>
           </div>
         </div>
         <div className='card' id='card_03'>
