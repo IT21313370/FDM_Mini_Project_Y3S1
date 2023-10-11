@@ -6,7 +6,7 @@ import pickle
 app = Flask(__name__)
 CORS(app)
 
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('trained_model.pkl', 'rb'))
 
 @app.route('/predict', methods=['POST', 'GET'])
 def predict():
