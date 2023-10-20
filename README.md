@@ -18,7 +18,7 @@ As students in group G09, we have undertaken this challenge with a focus on Huma
 
 We have selected the following public dataset for our project:
 
-- [HR Analytics: Job Change of Data Scientists](#link-to-dataset)
+- [HR Analytics: Job Change of Data Scientists](https://www.kaggle.com/datasets/arashnic/hr-analytics-job-change-of-data-scientists)
 
 ## Scope of Work
 
