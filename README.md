@@ -121,5 +121,8 @@ The primary goal is to provide insights to the HR team regarding data scientists
 ## Links
 
 - [Dataset](https://www.kaggle.com/datasets/arashnic/hr-analytics-job-change-of-data-scientists)
+- [Server Github Link](https://www.kaggle.com/datasets/arashnic/hr-analytics-job-change-of-data-scientists)
+- [Web App Github Link](https://www.kaggle.com/datasets/arashnic/hr-analytics-job-change-of-data-scientists)
+
 
   
