@@ -18,11 +18,11 @@ def predict():
         total_experience = request.args.get('total_experience', 0)
         last_new_job_gap = request.args.get('last_new_job_gap', 0)
 
-        print("Received city_development_index:", city_development_index)
-        print("Received relevant_experience:", relevant_experience)
-        print("Received education_level:", education_level)
-        print("Received total_experience:", total_experience)
-        print("Received last_new_job_gap:", last_new_job_gap)
+        # print("Received city_development_index:", city_development_index)
+        # print("Received relevant_experience:", relevant_experience)
+        # print("Received education_level:", education_level)
+        # print("Received total_experience:", total_experience)
+        # print("Received last_new_job_gap:", last_new_job_gap)
 
         # Perform any data preprocessing here if needed
 
